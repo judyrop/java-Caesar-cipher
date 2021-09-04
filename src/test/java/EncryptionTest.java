@@ -15,4 +15,9 @@ Encryption testEncryption = new Encryption("Judy", 5);
     public void newEncryption_getsPlainText() {
          assertEquals("Judy",testEncryption.getPlainText());
      }
+
+     @Test
+    public void newEncryption_getsShift() {
+         assertEquals("5",testEncryption.getShift());
+     }
  }
