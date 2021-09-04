@@ -10,6 +10,7 @@ Encryption testEncryption = new Encryption("Judy", 5);
      @Test
      public void newEncryption_testEncryption() {
          assertEquals(true, testEncryption instanceof Encryption);
+
      }
 
      @Test
