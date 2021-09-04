@@ -11,4 +11,8 @@ Encryption testEncryption = new Encryption("Judy", 5);
          assertEquals(true, testEncryption instanceof Encryption);
      }
 
+     @Test
+    public void newEncryption_getsPlainText() {
+         assertEquals("Judy",testEncryption.getPlainText());
+     }
  }
