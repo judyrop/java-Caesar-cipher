@@ -1,5 +1,12 @@
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DecryptionTest {
+    Decryption testDecryption = new Decryption("cipherText", 5);
 
+    @Test
+     public void newDecryption_testDecryption() {
+        assertEquals(true,testDecryption instanceof Decryption);
+    }
 }
