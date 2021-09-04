@@ -21,7 +21,7 @@ class DecryptionTest {
     }
 
     @Test
-    public void newDecryption_getsPlainText() {
-        assertEquals("plainText",testDecryption.getPlainText());
+    public void newDecryption_getsDecryptedText() {
+        assertEquals("plainText",testDecryption.getDecryptedText());
     }
 }

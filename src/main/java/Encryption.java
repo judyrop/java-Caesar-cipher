@@ -9,11 +9,11 @@ public class Encryption {
         this.plainText = plainText;
         this.shift = shift;
     }
-
     public  String getPlainText() {
       return this.plainText;
     }
     public int getShift(){
+
         return this.shift;
     }
     public String getEncryptedText(){
