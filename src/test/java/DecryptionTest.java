@@ -9,4 +9,9 @@ class DecryptionTest {
      public void newDecryption_testDecryption() {
         assertEquals(true,testDecryption instanceof Decryption);
     }
+
+    @Test
+    public void newDecryption_getsCipherText() {
+        assertEquals("cipherText",testDecryption.getCipherText());
+    }
 }
