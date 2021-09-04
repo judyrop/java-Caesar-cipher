@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EncryptionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-04T20:25:31" hostname="chepkemoi-HP-Laptop-15-bs0xx" time="0.229">
+<testsuite name="EncryptionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-04T20:39:31" hostname="chepkemoi-HP-Laptop-15-bs0xx" time="0.036">
   <properties/>
-  <testcase name="newEncryption_getsPlainText()" classname="EncryptionTest" time="0.229"/>
+  <testcase name="newEncryption_getsPlainText()" classname="EncryptionTest" time="0.036"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

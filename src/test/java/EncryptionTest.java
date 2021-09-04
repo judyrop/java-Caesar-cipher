@@ -18,6 +18,6 @@ Encryption testEncryption = new Encryption("Judy", 5);
 
      @Test
     public void newEncryption_getsShift() {
-         assertEquals("5",testEncryption.getShift());
+         assertEquals(5,testEncryption.getShift());
      }
  }
