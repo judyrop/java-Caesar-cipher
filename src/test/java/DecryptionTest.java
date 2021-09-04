@@ -19,4 +19,9 @@ class DecryptionTest {
    public void newDecryption_getsShift() {
         assertEquals(5,testDecryption.getShift());
     }
+
+    @Test
+    public void newDecryption_getsPlainText() {
+        assertEquals("plainText",testDecryption.getPlainText());
+    }
 }
