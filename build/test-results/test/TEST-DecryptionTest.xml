@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DecryptionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-04T22:09:19" hostname="chepkemoi-HP-Laptop-15-bs0xx" time="0.028">
+<testsuite name="DecryptionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-04T22:16:01" hostname="chepkemoi-HP-Laptop-15-bs0xx" time="0.029">
   <properties/>
-  <testcase name="newDecryption_getsCipherText()" classname="DecryptionTest" time="0.028"/>
+  <testcase name="newDecryption_getsShift()" classname="DecryptionTest" time="0.029"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
