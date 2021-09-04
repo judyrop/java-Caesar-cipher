@@ -3,9 +3,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
  public class EncryptionTest {
+//     public Encryption(String plainText, int shift){
+//     }
+Encryption testEncryption = new Encryption("Judy", 5);
      @Test
-     public void newEncryption_instantiatesCorrectly() {
-         Encryption testEncryption = new Encryption(plainText, shift);
+     public void newEncryption_testEncryption() {
          assertEquals(true, testEncryption instanceof Encryption);
      }
 
