@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Encryption {
     private String plainText;
@@ -19,19 +20,10 @@ public class Encryption {
         this.shift = shift;
     }
 
- Declare declare = new Declare();
-    public  String getEncryptedText(){
-        plainText = plainText.toLowerCase();
-         String cipherText = "";
-        for (int i =0; i<plainText.length();i++){
-            int charIndex = declare.getAlphabet().indexOf(plainText.charAt(i));
-            int newIndex = (charIndex + shift) % 26;
-            char cipherChar =declare.getAlphabet().charAt(newIndex);
-            cipherText = cipherText + cipherChar;
-        }
-        return "cipherText";
-       }
-
+// Declare declare = new Declare();
+//    public  String getEncryptedText(){
+//
+//       }
 
 
 }
