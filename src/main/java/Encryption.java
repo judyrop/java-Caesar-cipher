@@ -11,7 +11,8 @@ public class Encryption {
         this.shift = shift;
     }
     public  String getPlainText() {
-      return this.plainText;
+
+        return this.plainText;
     }
     public int getShift(){
 
