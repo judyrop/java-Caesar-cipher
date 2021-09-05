@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 //     public Encryption(String plainText, int shift){
 //
 Encryption testEncryption = new Encryption();
-  String cipherText;
+
      @Test
      public void newEncryption_testEncryption() {
          assertEquals(true, testEncryption instanceof Encryption);

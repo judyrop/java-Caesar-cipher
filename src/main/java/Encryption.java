@@ -1,9 +1,26 @@
 
 public class Encryption {
+    private String plainText;
+    private int shift;
 
+    public String getPlainText() {
+        return plainText;
+    }
 
-    Declare declare = new Declare();
-    public  String getEncryptedText(String plainText,int shift){
+    public void setPlainText(String plainText) {
+        this.plainText = plainText;
+    }
+
+    public int getShift() {
+        return shift;
+    }
+
+    public void setShift(int shift) {
+        this.shift = shift;
+    }
+
+ Declare declare = new Declare();
+    public  String getEncryptedText(){
         plainText = plainText.toLowerCase();
          String cipherText = "";
         for (int i =0; i<plainText.length();i++){
