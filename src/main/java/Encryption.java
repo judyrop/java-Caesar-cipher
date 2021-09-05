@@ -1,5 +1,6 @@
 
 public class Encryption {
+
     static String alphabet = "abcdefghijklmnopqrstuvwxyz";
     private String plainText;
     private int shift;
