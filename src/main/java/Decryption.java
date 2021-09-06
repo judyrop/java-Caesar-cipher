@@ -6,44 +6,23 @@ public class Decryption {
 
 
     Scanner myScan = new Scanner(System.in);
-        System.out.println("Enter the cipher Text");
-    String cipherText = myScan.nextLine();
+        System.out.println("Enter the input Text");
+    String inputText = myScan.nextLine();
 
         System.out.println("Enter shift:");
     int shift = myScan.nextInt();
-
-    String plainText = Declaration.getDecryptedText(cipherText,shift);
-        System.out.println("plainText:" + plainText);
+        System.out.println("What do you want to do ?reply 1 for decrypt and 2 for encrypt");
+        int reply = myScan.nextInt();
+        if (reply == 1){
+            String plainText = Declaration.getDecryptedText(inputText,shift);
+            System.out.println("plainText:" + plainText);
+            System.out.println("The decrypted text is :" + inputText );
+        }
+    else if(reply == 2){
+            String cText = Declare.getEncryptedText(inputText,shift);
+            System.out.println("CipherText:" + cText);
+            System.out.println("The encrypted text is:" + inputText);
+        }
 }
-//    static String alphabet = "abcdefghijklmnopqrstuvwxyz";
-//    private String cipherText;
-//    private int shift;
-//    private String plainText;
-////
-//public Decryption(String cipherText,int shift){
-//this.cipherText = cipherText;
-//this.shift = shift;
-//}
-//    public  String getCipherText() {
-//        return this.cipherText;
-//    }
-//    public int getShift(){
-//
-//    return this.shift;
-//    }
-//    public String getDecryptedText() {
-//        cipherText = cipherText.toLowerCase();
-//        String plainText = "";
-//        for (int i = 0; i < cipherText.length(); i++) {
-//            int charIndex = alphabet.indexOf(cipherText.charAt(i));
-//            int newIndex = (charIndex - shift) % 26;
-//            if (newIndex < 0) {
-//                newIndex = alphabet.length() + newIndex;
-//            }
-//            char plainChar = alphabet.charAt(newIndex);
-//            plainText = plainText + plainChar;
-//        }
-//        return "plainText";
-//    }
 
 }
