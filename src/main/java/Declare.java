@@ -1,22 +1,46 @@
 public  class Declare {
 
-    String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        private String plainText;
+        private int shift;
+        public Declare( String plainText, int shift){
+            this.plainText = plainText;
+            this.shift = shift;
+        }
 
-    public String getAlphabet() {
-        return alphabet;
-    }
+        public String getPlainText() {
+            return plainText;
+        }
+//
+//        public void setPlainText(String plainText) {
+//            this.plainText = plainText;
+//        }
+//
+        public int getShift() {
+            return shift;
+        }
+//
+//        public void setShift(int shift) {
+//            this.shift = shift;
+//        }
 
-    public void setAlphabet(String alphabet) {
-        this.alphabet = alphabet;
-    }
+//        String alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    public String getEncryptedText(String plainText, int shift) {
+//    public String getAlphabet() {
+//        return alphabet;
+//    }
+//
+//    public void setAlphabet(String alphabet) {
+//        this.alphabet = alphabet;
+//    }
+
+    public static String getEncryptedText(String plainText, int shift) {
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
         plainText = plainText.toLowerCase();
         String cipherText = "";
         for (int i =0; i<plainText.length();i++){
-            int charIndex = getAlphabet().indexOf(plainText.charAt(i));
+            int charIndex = alphabet.indexOf(plainText.charAt(i));
             int newIndex = (charIndex + shift) % 26;
-            char cipherChar =getAlphabet().charAt(newIndex);
+            char cipherChar =alphabet.charAt(newIndex);
             cipherText = cipherText + cipherChar;
         }
         return cipherText;
