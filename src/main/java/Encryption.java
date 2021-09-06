@@ -26,16 +26,15 @@ public class Encryption {
 //        Declare declare = new Declare;
 
         Scanner myScan = new Scanner(System.in);
-        System.out.println("Enter plain text");
-//        System.out.println("Enter the plain key:");
+        System.out.println("Enter the plain Text");
         String plainText = myScan.nextLine();
 
         System.out.println("Enter shift:");
         int shift = myScan.nextInt();
 
 
-//        String cipherText = declare.getEncryptedText(plainText, shift);
-        System.out.println("CipherText:" + Declare.getEncryptedText(plainText,shift));
+        String cipherText = Declare.getEncryptedText(plainText,shift);
+        System.out.println("CipherText:" + cipherText);
     }
 
 // Declare declare = new Declare();
